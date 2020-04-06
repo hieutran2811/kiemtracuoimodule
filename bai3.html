@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let N=121393;
+    function isFibonacci(N) {
+        let a=1;
+        let b=1;
+        let z=0;
+        while (z<N){
+            z = a+b;
+            a = b;
+            b = z;
+        }
+        if(N===1){
+            return true;
+        }else{
+            if(z===N){
+                return true;
+            }
+        }
+        return false;
+    }
+    let m=isFibonacci(N);
+    console.log(m);
+</script>
+</body>
+</html>

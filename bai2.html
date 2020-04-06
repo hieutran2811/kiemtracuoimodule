@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr=[1,2,3,4,3,4,8,3,3,3,4,5,7];
+    let x=3;
+    function tryRemoveFromArray(arr,x) {
+        let i=0;
+        while(i<arr.length){
+            if(arr[i]===x){
+                arr.splice(i,1);
+                i--;
+            }
+            i++;
+        }
+        return arr;
+    }
+    let t=tryRemoveFromArray(arr,x);
+    console.log(t);
+</script>
+</body>
+</html>
